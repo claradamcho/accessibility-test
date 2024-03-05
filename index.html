@@ -4,15 +4,15 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Accessibility Form</title>
-    	<link rel="stylesheet" href="https://lib.lumen.com/chi/5.49.0/chi-portal.css" integrity="sha256-mt8+1TJHdfcqh7WSbZsS9cPdHLrlhL6bb9PcTE86j9s=" crossorigin="anonymous">
-    	<script src="https://lib.lumen.com/chi/5.49.0/js/chi.js" integrity="sha256-jYYapuaLX11aGv5Jm+7xn1Ncov6u4lyd4rPHyC17QRA=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://lib.lumen.com/chi/5.49.0/chi-portal.css" integrity="sha256-mt8+1TJHdfcqh7WSbZsS9cPdHLrlhL6bb9PcTE86j9s=" crossorigin="anonymous">
+	<script src="https://lib.lumen.com/chi/5.49.0/js/chi.js" integrity="sha256-jYYapuaLX11aGv5Jm+7xn1Ncov6u4lyd4rPHyC17QRA=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body>	
 	<section class="-p--6">
         <div class="chi-grid">
-            <div class="chi-col -w--2"></div>
-            <div class="chi-col">
+            <div class="chi-col -w--3 "></div>
+            <div class="chi-col -w--6">
                 <label class="chi-label ">
                     What issue is occuring?
                     <abbr class="chi-label__required" aria-label="Required field">*</abbr>
@@ -90,7 +90,9 @@
                   <div class="chi-grid">
                     <div class="chi-col">
                         <div class="chi-form__item">
-                            <label class="chi-label" for="datepicker-1">Date</label>
+                            <label class="chi-label" for="datepicker-1">Date
+                                <abbr class="chi-label__required" aria-label="Required field">*</abbr>
+                            </label>
                             <div class="chi-input__wrapper -icon--right">
                               <input id="datepicker-1" type="text" class="chi-input" placeholder="MM/DD/YYYY">
                               <i class="chi-icon icon-date" aria-hidden="true"></i>
@@ -135,21 +137,22 @@
                     <div class="chi-picker-group">
                       <div class="chi-picker-group__content">
                         <input class="chi-picker__input" type="radio" name="unique-name-ch" id="unique-id-ch1" checked>
-                        <label for="unique-id-ch1">Still occuring</label>
+                        <label for="unique-id-ch1">Still Ocurring</label>
                         <input class="chi-picker__input" type="radio" name="unique-name-ch" id="unique-id-ch2">
                         <label for="unique-id-ch2">Problem is over</label>
                       </div>
                     </div>
                   </fieldset>
-                  <div class="chi-grid -no-gutter -align--center">
-                    <div class="chi-col"></div>
-                    <div class="chi-col"></div>
-                    <div class="chi-col"></div>
-                    <div class="chi-col"><a class="chi-link -xl" href="#">Cancel</a></div>
-                    <div class="chi-col"><button class="chi-button -primary -md">Continue</button></div>
-                    <div class="chi-col"><button class="chi-button -md">Previous</button></div>
-                  </div> 
+                  <div class="chi-grid -align--center">
+                    <div class="chi-col -w--6"></div>
+                    <div class="chi-col -w--2"><a class="chi-link -md" href="#">Cancel</a></div>
+                    <div class="chi-col -w--2"><button class="chi-button -primary -sm">Previous</button></div>
+                    <div class="chi-col -w--2"><button class="chi-button -sm ">Continue</button></div>
+                  </div>
+            </div>
+            <div class="chi-col -w--3"></div>  
 	</section>
+
     <script>chi.dropdown(document.getElementById('dropdown-1'));</script>
     <script>chi.datePicker(document.getElementById('datepicker-1'));</script>
     <script>chi.dropdown(document.getElementById('example__dropdown-with-search'));</script>
