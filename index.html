@@ -26,8 +26,8 @@
           What issue is occuring?
           <abbr class="chi-label__required" aria-label="Required field">*</abbr>
         </label>
-        <div class="chi-dropdown ">
-          <button id="dropdown-1" class="chi-button chi-dropdown__trigger">Select</button>
+        <div class="chi-dropdown -fluid">
+          <button id="dropdown-1" class="chi-button -fluid chi-dropdown__trigger">Select</button>
           <div class="chi-dropdown__menu">
             <a class="chi-dropdown__menu-item" href="#">Item 1</a>
             <a class="chi-dropdown__menu-item" href="#">Item 2</a>
@@ -44,44 +44,49 @@
         </div> <!-- EO Text Area -->
 
         <!-- Text Input -->
-        <div class="chi-form__item -mt--3">
-          <label class="chi-label" for="example__base">What is the impact to your business?
-            <abbr class="chi-label__required" aria-label="Required field">*</abbr>
-          </label>
-          <input type="text" class="chi-input" id="example__base">
-        </div><!-- EO Text Input -->
-
-        <!-- Checkbox -->
-        <fieldset class="-mt--3">
-          <legend class="chi-label -mt--3">
-            Severity
-            <abbr class="chi-label__required" aria-label="Required field">*</abbr>
-          </legend>
-          <div class="chi-form__item ">
-            <div class="chi-checkbox">
-              <input type="checkbox" class="chi-checkbox__input" id="example__stacked1">
-              <label class="chi-checkbox__label" for="example__stacked1">Severe</label>
+    <div class="chi-grid">
+        <div class="chi-col -w--6">
+            <div class="chi-form__item -mt--3">
+            <label class="chi-label" for="example__base">What is the impact to your business?
+                <abbr class="chi-label__required" aria-label="Required field">*</abbr>
+            </label>
+            <input type="text" class="chi-input" id="example__base">
+            </div><!-- EO Text Input -->
+        </div>
+        <div class="chi-col -w--6">
+            <!-- Checkbox -->
+            <fieldset class="-mt--3">
+            <legend class="chi-label -mt--3">
+                Severity
+                <abbr class="chi-label__required" aria-label="Required field">*</abbr>
+            </legend>
+            <div class="chi-form__item ">
+                <div class="chi-checkbox">
+                <input type="checkbox" class="chi-checkbox__input" id="example__stacked1">
+                <label class="chi-checkbox__label" for="example__stacked1">Severe</label>
+                </div>
             </div>
-          </div>
-          <div class="chi-form__item ">
-            <div class="chi-checkbox">
-              <input type="checkbox" class="chi-checkbox__input" id="example__stacked2">
-              <label class="chi-checkbox__label" for="example__stacked2">High</label>
+            <div class="chi-form__item ">
+                <div class="chi-checkbox">
+                <input type="checkbox" class="chi-checkbox__input" id="example__stacked2">
+                <label class="chi-checkbox__label" for="example__stacked2">High</label>
+                </div>
             </div>
-          </div>
-          <div class="chi-form__item ">
-            <div class="chi-checkbox">
-              <input type="checkbox" class="chi-checkbox__input" id="example__stacked3">
-              <label class="chi-checkbox__label" for="example__stacked3">Medium</label>
+            <div class="chi-form__item ">
+                <div class="chi-checkbox">
+                <input type="checkbox" class="chi-checkbox__input" id="example__stacked3">
+                <label class="chi-checkbox__label" for="example__stacked3">Medium</label>
+                </div>
             </div>
-          </div>
-          <div class="chi-form__item ">
-            <div class="chi-checkbox">
-              <input type="checkbox" class="chi-checkbox__input" id="example__stacked4">
-              <label class="chi-checkbox__label" for="example__stacked4">Low</label>
+            <div class="chi-form__item ">
+                <div class="chi-checkbox">
+                <input type="checkbox" class="chi-checkbox__input" id="example__stacked4">
+                <label class="chi-checkbox__label" for="example__stacked4">Low</label>
+                </div>
             </div>
-          </div>
-        </fieldset><!-- EO Checkbox -->
+            </fieldset><!-- EO Checkbox -->
+        </div>
+    </div><!-- EO Grid Checkbox -->
 
         <!-- Radio button -->
         <fieldset class="-mt--3">
@@ -109,7 +114,7 @@
           <abbr class="chi-label__required" aria-label="Required field">*</abbr>
         </label>
         <div class="chi-grid">
-          <div class="chi-col">
+          <div class="chi-col -w--6">
             <div class="chi-form__item">
               <label class="chi-label" for="datepicker-1">Date
                 <abbr class="chi-label__required" aria-label="Required field">*</abbr>
@@ -122,13 +127,13 @@
           </div> <!-- EO Date Picker -->
 
           <!-- Search Dropdown -->
-          <div class="chi-col">
+          <div class="chi-col -w--6">
             <label class="chi-label">
               Time Zone
               <abbr class="chi-label__required" aria-label="Required field">*</abbr>
             </label>
-            <div class="chi-dropdown">
-              <button id="example__dropdown-with-search" class="chi-button chi-dropdown__trigger">Select</button>
+            <div class="chi-dropdown -fluid">
+              <button id="example__dropdown-with-search" class="chi-button -fluid chi-dropdown__trigger">Select</button>
               <div class="chi-dropdown__menu">
                 <div class="chi-dropdown__menu-header -mb--1">
                   <div class="chi-input__wrapper -icon--right">
@@ -151,15 +156,13 @@
               </div>
             </div>
           </div> <!-- EO Search Dropdown -->
-        </div><!-- EO Chi grid -->
+        </div><!-- EO of grid -->
 
         <!-- Picker Group -->
-        <label class="chi-label -mt--3">
-          Problem Status
-          <abbr class="chi-label__required" aria-label="Required field">*</abbr>
-        </label>
-        <fieldset>
-          <legend class="chi-label">Select an option</legend>
+        <fieldset class="-mt--3">
+          <legend class="chi-label"> Problem Status
+            <abbr class="chi-label__required" aria-label="Required field">*</abbr>
+          </legend>
           <div class="chi-picker-group">
             <div class="chi-picker-group__content">
               <input class="chi-picker__input" type="radio" name="unique-name-ch" id="unique-id-ch1" checked>
@@ -176,7 +179,7 @@
           <div class="chi-col -w--2"><button class="chi-button -primary -sm">Previous</button></div>
           <div class="chi-col -w--2"><button class="chi-button -sm ">Continue</button></div>
         </div>
-      </div><!--  End of Content -->
+      </div><!--  End of Grid Content -->
       <div class="chi-col -w--3"></div>
   </section><!-- End of Section -->
 
