@@ -16,10 +16,10 @@
   <!-- Start of Section -->
   <section class="-p--6">
     <div class="chi-grid -bg--info-white">
-      <div class="chi-col -w--3"></div>
+      <div class="chi-col -w--2"></div>
 
       <!-- Start of Content -->
-      <div class="chi-col -w--6 -p--6 -bg--white">
+      <div class="chi-col -w--8 -p--6 -bg--white">
 
         <!-- Dropdown -->
         <label class="chi-label" for="issue-type">
@@ -27,12 +27,13 @@
           <abbr class="chi-label__required" aria-label="Required field">*</abbr>
         </label>
         <div class="chi-dropdown -fluid">
-          <button id="dropdown-1" class="chi-button -fluid chi-dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-labelledby="issue-type">Select</button>
+          <button id="issue-type" class="chi-button -fluid chi-dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-labelledby="issue-type">Select</button>
           <div class="chi-dropdown__menu">
             <a class="chi-dropdown__menu-item" href="#">Item 1</a>
             <a class="chi-dropdown__menu-item" href="#">Item 2</a>
           </div>
         </div><!-- EO Dropdown -->
+
 
         <!-- Text Area -->
         <div class="chi-form__item -mt--3">
@@ -40,7 +41,7 @@
             Issue Details (any attachments can be added in Attachments section below)
             <abbr class="chi-label__required" aria-label="Required field">*</abbr>
           </label>
-          <textarea class="chi-input" id="issue-details" required aria-labelledby="issue-details-label"></textarea>
+          <textarea class="chi-input" id="issue-details" required aria-labelledby="issue-details"></textarea>
         </div> <!-- EO Text Area -->
 
         <!-- Text Input -->
@@ -50,7 +51,7 @@
               <label class="chi-label" for="business-impact">What is the impact to your business?
                 <abbr class="chi-label__required" aria-label="Required field">*</abbr>
               </label>
-              <input type="text" class="chi-input" id="business-impact" aria-labelledby="business-impact-label">
+              <input type="text" class="chi-input" id="business-impact" aria-labelledby="business-impact">
             </div><!-- EO Text Input -->
           </div>
           <div class="chi-col -w--6">
@@ -109,18 +110,18 @@
         </fieldset><!-- EO Radio button -->
 
         <!-- Date Picker -->
-        <label class="chi-label -mt--3">
+        <label class="chi-label -mt--3" for="problem-start">
           When did the problem start?
           <abbr class="chi-label__required" aria-label="Required field">*</abbr>
         </label>
         <div class="chi-grid">
           <div class="chi-col -w--6">
             <div class="chi-form__item">
-              <label class="chi-label" for="datepicker-1">Date
+              <label class="chi-label" for="problem-start">Date
                 <abbr class="chi-label__required" aria-label="Required field">*</abbr>
               </label>
               <div class="chi-input__wrapper -icon--right">
-                <input id="datepicker-1" type="text" class="chi-input" placeholder="MM/DD/YYYY" aria-labelledby="datepicker-1-label">
+                <input id="problem-start" type="text" class="chi-input" placeholder="MM/DD/YYYY" aria-labelledby="problem-start">
                 <i class="chi-icon icon-date" aria-hidden="true"></i>
               </div>
             </div>
@@ -128,12 +129,12 @@
 
           <!-- Search Dropdown -->
           <div class="chi-col -w--6">
-            <label class="chi-label">
+            <label class="chi-label" for="time-zone">
               Time Zone
               <abbr class="chi-label__required" aria-label="Required field">*</abbr>
             </label>
             <div class="chi-dropdown -fluid">
-              <button id="example__dropdown-with-search" class="chi-button -fluid chi-dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-labelledby="time-zone">Select</button>
+              <button id="time-zone" class="chi-button -fluid chi-dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-labelledby="time-zone">Select</button>
               <div class="chi-dropdown__menu">
                 <!-- Dropdown items go here -->
               </div>
@@ -156,15 +157,19 @@
           </div>
         </fieldset> <!-- EO Picker Group -->
 
-        <div class="chi-grid -align--center">
-          <div class="chi-col -w--6"></div>
-          <div class="chi-col -w--2"><button class="chi-button -primary -flat -sm">Cancel</button></div>
-          <div class="chi-col -w--2"><button class="chi-button -sm ">Previous</button></div>
-          <div class="chi-col -w--2"><button class="chi-button -primary -sm">Continue</button></div>
+        <div class="chi-grid -align--center -mt--3">
+          <div class="chi-col -w--12">
+            <div class="-d--flex -justify-content--end">
+              <button class="chi-button -primary -flat -sm">Cancel</button>
+              <button class="chi-button -sm ">Previous</button>
+              <button class="chi-button -primary -sm">Continue</button>
+            </div>
+          </div>
+
         </div>
 
       </div><!--  End of Grid Content -->
-      <div class="chi-col -w--3"></div>
+      <div class="chi-col -w--2"></div>
     </div>
   </section><!-- End of Section -->
 
