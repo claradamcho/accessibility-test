@@ -22,15 +22,17 @@
       <div class="chi-col -w--8 -p--6 -bg--white">
 
         <!-- Dropdown -->
-        <label class="chi-label" for="issue-type">
-          What issue is occurring?
-          <abbr class="chi-label__required" aria-label="Required field">*</abbr>
-        </label>
-        <div class="chi-dropdown -fluid">
-          <button id="issue-type" class="chi-button -fluid chi-dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-labelledby="issue-type">Select</button>
-          <div class="chi-dropdown__menu">
-            <a class="chi-dropdown__menu-item" href="#">Item 1</a>
-            <a class="chi-dropdown__menu-item" href="#">Item 2</a>
+        <div class="chi-form__item">
+          <label class="chi-label" for="issue-type">
+            What issue is occurring?
+            <abbr class="chi-label__required" aria-label="Required field">*</abbr>
+          </label>
+          <div class="chi-dropdown -fluid">
+            <button id="issue-type" class="chi-button -fluid chi-dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-labelledby="issue-type">Select</button>
+            <div class="chi-dropdown__menu">
+              <a class="chi-dropdown__menu-item" href="#">Item 1</a>
+              <a class="chi-dropdown__menu-item" href="#">Item 2</a>
+            </div>
           </div>
         </div><!-- EO Dropdown -->
 
@@ -115,7 +117,7 @@
           <abbr class="chi-label__required" aria-label="Required field">*</abbr>
         </label>
         <div class="chi-grid">
-          <div class="chi-col -w--12">
+          <div class="chi-col -w--12 -w-lg--6">
             <div class="chi-form__item">
               <label class="chi-label" for="problem-start">Date
                 <abbr class="chi-label__required" aria-label="Required field">*</abbr>
@@ -128,7 +130,7 @@
           </div> <!-- EO Date Picker -->
 
           <!-- Search Dropdown -->
-          <div class="chi-col -w--12 -mt--3">
+          <div class="chi-col -w--12 -w-lg--6">
             <label class="chi-label" for="time-zone">
               Time Zone
               <abbr class="chi-label__required" aria-label="Required field">*</abbr>
@@ -186,5 +188,4 @@
   <script>chi.dropdown(document.getElementById('time-zone'));</script>
 
 </body>
-
 </html>
